@@ -1,0 +1,11 @@
+{
+  "name": "Sekolah Digital",
+  "description": "Aplikasi manajemen sekolah real-time dengan multi-role dan konfigurasi dinamis.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

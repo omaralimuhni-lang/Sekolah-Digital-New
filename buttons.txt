@@ -1,0 +1,522 @@
+src/views/guru/InputJadwalSiswa.tsx:184:           <button
+src/views/guru/InputJadwalSiswa.tsx:228:                        <button onClick={() => handleOpenEdit(item)} className="p-2 bg-slate-100 hover:bg-blue-100 text-slate-600 hover:text-blue-600 dark:bg-slate-800 dark:hover:bg-blue-900/30 dark:text-slate-400 dark:hover:text-blue-400 rounded-lg transition-colors">
+src/views/guru/InputJadwalSiswa.tsx:231:                        <button onClick={() => handleDelete(item.id)} className="p-2 bg-slate-100 hover:bg-red-100 text-slate-600 hover:text-red-600 dark:bg-slate-800 dark:hover:bg-red-900/30 dark:text-slate-400 dark:hover:text-red-400 rounded-lg transition-colors">
+src/views/guru/InputJadwalSiswa.tsx:254:                <button onClick={() => setIsModalOpen(false)} className="p-2 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
+src/views/guru/InputJadwalSiswa.tsx:272:                     <button onClick={() => setIsModalOpen(false)} className="px-5 py-3 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl transition-colors">Batal</button>
+src/views/guru/InputJadwalSiswa.tsx:273:                     <button onClick={() => setShowConfirm(true)} className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-colors">Simpan Jadwal</button>
+src/views/guru/InputJadwalSiswa.tsx:277:                     <button onClick={() => setShowConfirm(false)} className="px-5 py-3 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl transition-colors">Koreksi Data</button>
+src/views/guru/InputJadwalSiswa.tsx:278:                     <button onClick={saveJadwal} className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-colors">Ya, Simpan Jadwal</button>
+src/views/guru/KelasGuru.tsx:105:         <button 
+src/views/guru/KelasGuru.tsx:112:         <button 
+src/views/guru/KelasGuru.tsx:161:                        <button onClick={() => { setViewData(item); setIsViewModalOpen(true); }} className="p-2 bg-slate-100 hover:bg-emerald-100 text-slate-600 hover:text-emerald-600 dark:bg-slate-800 dark:hover:bg-emerald-900/30 dark:text-slate-400 dark:hover:text-emerald-400 rounded-lg transition-colors" title="Lihat">
+src/views/guru/KelasGuru.tsx:164:                        <button onClick={() => handleEdit(item)} className="p-2 bg-slate-100 hover:bg-blue-100 text-slate-600 hover:text-blue-600 dark:bg-slate-800 dark:hover:bg-blue-900/30 dark:text-slate-400 dark:hover:text-blue-400 rounded-lg transition-colors" title="Edit">
+src/views/guru/KelasGuru.tsx:167:                        <button onClick={() => handleDelete(item.id)} className="p-2 bg-slate-100 hover:bg-red-100 text-slate-600 hover:text-red-600 dark:bg-slate-800 dark:hover:bg-red-900/30 dark:text-slate-400 dark:hover:text-red-400 rounded-lg transition-colors" title="Hapus">
+src/views/guru/KelasGuru.tsx:195:                <button type="button" onClick={() => setIsModalOpen(false)} className="p-2 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+src/views/guru/KelasGuru.tsx:217:                 <button type="button" onClick={() => setIsModalOpen(false)} className="px-5 py-3 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl transition-colors">Batal</button>
+src/views/guru/KelasGuru.tsx:218:                 <button type="submit" form="editForm" className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-colors shadow-lg shadow-blue-500/20">Simpan Perubahan</button>
+src/views/guru/KelasGuru.tsx:232:                <button onClick={() => setIsViewModalOpen(false)} className="p-2 text-white/80 hover:bg-white/20 rounded-full transition-colors">
+src/views/guru/KelasGuru.tsx:287:                 <button onClick={() => setIsViewModalOpen(false)} className="px-5 py-3 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-800 dark:text-white font-medium rounded-xl transition-colors">Tutup</button>
+src/views/guru/KehadiranSiswa.tsx:130:          <button onClick={exportCSV} className="flex items-center space-x-2 px-3 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl transition-colors text-sm font-medium">
+src/views/guru/KehadiranSiswa.tsx:134:          <button onClick={exportPDF} className="flex items-center space-x-2 px-3 py-2 bg-rose-500 hover:bg-rose-600 text-white rounded-xl transition-colors text-sm font-medium">
+src/views/guru/KehadiranSiswa.tsx:152:          <button
+src/views/guru/KehadiranSiswa.tsx:226:               <button onClick={() => setSelectedPhoto(null)} className="absolute -top-12 right-0 p-2 text-white/70 hover:text-white bg-black/50 rounded-full"><X className="w-6 h-6" /></button>
+src/views/guru/PRTugasGuru.tsx:266:            <button 
+src/views/guru/PRTugasGuru.tsx:273:            <button 
+src/views/guru/PRTugasGuru.tsx:285:                  <button onClick={() => csvInputRef.current?.click()} className="flex items-center gap-2 px-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors whitespace-nowrap shadow-sm text-sm font-medium">
+src/views/guru/PRTugasGuru.tsx:288:                  <button onClick={handleDownloadCSV} className="flex items-center gap-2 px-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors whitespace-nowrap shadow-sm text-sm font-medium">
+src/views/guru/PRTugasGuru.tsx:293:            <button
+src/views/guru/PRTugasGuru.tsx:340:                        <button onClick={() => navigate('PenilaianRaportGuru')} className="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium mr-auto transition-colors shadow-sm ring-1 ring-slate-200 dark:ring-slate-700">
+src/views/guru/PRTugasGuru.tsx:343:                        <button onClick={() => { setViewData(item); setIsViewModalOpen(true); }} className="p-2 bg-slate-100 hover:bg-emerald-100 text-slate-600 hover:text-emerald-600 dark:bg-slate-800 dark:hover:bg-emerald-900/30 dark:text-slate-400 dark:hover:text-emerald-400 rounded-lg transition-colors" title="Lihat">
+src/views/guru/PRTugasGuru.tsx:346:                        <button onClick={() => handleEdit(item)} className="p-2 bg-slate-100 hover:bg-blue-100 text-slate-600 hover:text-blue-600 dark:bg-slate-800 dark:hover:bg-blue-900/30 dark:text-slate-400 dark:hover:text-blue-400 rounded-lg transition-colors" title="Edit">
+src/views/guru/PRTugasGuru.tsx:349:                        <button onClick={() => handleDelete(item.id)} className="p-2 bg-slate-100 hover:bg-red-100 text-slate-600 hover:text-red-600 dark:bg-slate-800 dark:hover:bg-red-900/30 dark:text-slate-400 dark:hover:text-red-400 rounded-lg transition-colors" title="Hapus">
+src/views/guru/PRTugasGuru.tsx:370:                <button type="button" onClick={() => setIsOfflineModalOpen(false)} className="p-2 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+src/views/guru/PRTugasGuru.tsx:416:                 <button type="button" onClick={() => setIsOfflineModalOpen(false)} className="px-5 py-3 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl transition-colors">Batal</button>
+src/views/guru/PRTugasGuru.tsx:417:                 <button type="button" onClick={saveOffline} className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-colors shadow-lg shadow-blue-500/20">{editId ? 'Simpan' : 'Kirim Tugas'}</button>
+src/views/guru/PRTugasGuru.tsx:431:                <button type="button" onClick={() => setIsOnlineModalOpen(false)} className="p-2 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+src/views/guru/PRTugasGuru.tsx:473:                       <button onClick={addSoal} className="flex items-center gap-1.5 bg-blue-100 hover:bg-blue-200 text-blue-700 dark:bg-blue-900/30 dark:hover:bg-blue-900/50 dark:text-blue-300 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors">
+src/views/guru/PRTugasGuru.tsx:481:                             <button onClick={() => removeSoal(i)} className="absolute top-4 right-4 p-1.5 text-slate-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 rounded-lg transition-colors">
+src/views/guru/PRTugasGuru.tsx:526:                 <button type="button" onClick={() => setIsOnlineModalOpen(false)} className="px-5 py-3 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl transition-colors">Batal</button>
+src/views/guru/PRTugasGuru.tsx:527:                 <button type="button" onClick={saveOnline} className="px-5 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-xl transition-colors shadow-lg shadow-purple-500/20">{editId ? 'Simpan' : 'Simpan Tugas Online'}</button>
+src/views/guru/PRTugasGuru.tsx:541:                <button onClick={() => setIsViewModalOpen(false)} className="p-2 text-white/80 hover:bg-white/20 rounded-full transition-colors">
+src/views/guru/PRTugasGuru.tsx:591:                 <button onClick={() => setIsViewModalOpen(false)} className="px-5 py-3 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-800 dark:text-white font-medium rounded-xl transition-colors">Tutup</button>
+src/views/guru/KeuanganSiswaGuru.tsx:133:         <button 
+src/views/guru/KeuanganSiswaGuru.tsx:140:         <button 
+src/views/guru/KeuanganSiswaGuru.tsx:147:         <button 
+src/views/guru/KeuanganSiswaGuru.tsx:154:         <button 
+src/views/guru/JadwalGuru.tsx:271:             <button
+src/views/guru/JadwalGuru.tsx:278:             <button
+src/views/guru/JadwalGuru.tsx:285:             <button
+src/views/guru/JadwalGuru.tsx:337:                        <button onClick={() => handleView(item)} className="p-2 bg-slate-100 hover:bg-emerald-100 text-slate-600 hover:text-emerald-600 dark:bg-slate-800 dark:hover:bg-emerald-900/30 dark:text-slate-400 dark:hover:text-emerald-400 rounded-lg transition-colors" title="Lihat Detail">
+src/views/guru/JadwalGuru.tsx:340:                        <button onClick={() => handleOpenEdit(item)} className="p-2 bg-slate-100 hover:bg-blue-100 text-slate-600 hover:text-blue-600 dark:bg-slate-800 dark:hover:bg-blue-900/30 dark:text-slate-400 dark:hover:text-blue-400 rounded-lg transition-colors" title="Edit">
+src/views/guru/JadwalGuru.tsx:343:                        <button onClick={() => handleDelete(item.id)} className="p-2 bg-slate-100 hover:bg-red-100 text-slate-600 hover:text-red-600 dark:bg-slate-800 dark:hover:bg-red-900/30 dark:text-slate-400 dark:hover:text-red-400 rounded-lg transition-colors" title="Hapus">
+src/views/guru/JadwalGuru.tsx:367:                <button onClick={() => setIsModalOpen(false)} className="p-2 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+src/views/guru/JadwalGuru.tsx:375:                 <button onClick={() => setIsModalOpen(false)} className="px-5 py-3 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl transition-colors">Batal</button>
+src/views/guru/JadwalGuru.tsx:376:                 <button onClick={saveJadwal} className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-colors shadow-lg shadow-blue-500/20">Simpan Jadwal</button>
+src/views/guru/JadwalGuru.tsx:390:                <button onClick={() => setIsViewModalOpen(false)} className="p-2 text-white/80 hover:bg-white/20 rounded-full transition-colors">
+src/views/guru/JadwalGuru.tsx:421:                 <button onClick={() => setIsViewModalOpen(false)} className="px-5 py-3 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-800 dark:text-white font-medium rounded-xl transition-colors">Tutup Menu</button>
+src/views/guru/PenilaianRaportGuru.tsx:305:        <button onClick={handleOpenAdd} className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl font-medium transition-colors shadow-lg shadow-blue-500/20 whitespace-nowrap">
+src/views/guru/PenilaianRaportGuru.tsx:308:        <button onClick={handleDownloadExcel} className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-medium transition-colors shadow-lg shadow-emerald-500/20 whitespace-nowrap">
+src/views/guru/PenilaianRaportGuru.tsx:311:        <button onClick={handleDownloadPdf} className="flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white px-4 py-2.5 rounded-xl font-medium transition-colors shadow-lg shadow-rose-500/20 whitespace-nowrap">
+src/views/guru/PenilaianRaportGuru.tsx:372:        <button onClick={() => { setViewData(item); setIsViewModalOpen(true); }} className="p-2 bg-slate-100 hover:bg-emerald-100 text-slate-600 hover:text-emerald-600 dark:bg-slate-800 dark:hover:bg-emerald-900/30 dark:text-slate-400 dark:hover:text-emerald-400 rounded-lg transition-colors" title="Lihat">
+src/views/guru/PenilaianRaportGuru.tsx:375:        <button onClick={() => handleEdit(item)} className="p-2 bg-slate-100 hover:bg-blue-100 text-slate-600 hover:text-blue-600 dark:bg-slate-800 dark:hover:bg-blue-900/30 dark:text-slate-400 dark:hover:text-blue-400 rounded-lg transition-colors" title="Edit">
+src/views/guru/PenilaianRaportGuru.tsx:378:        <button onClick={() => handleDelete(item.id, getStorageKeyByTab(), setter, data)} className="p-2 bg-slate-100 hover:bg-red-100 text-slate-600 hover:text-red-600 dark:bg-slate-800 dark:hover:bg-red-900/30 dark:text-slate-400 dark:hover:text-red-400 rounded-lg transition-colors" title="Hapus">
+src/views/guru/PenilaianRaportGuru.tsx:405:           <button 
+src/views/guru/PenilaianRaportGuru.tsx:428:                       <button onClick={() => {
+src/views/guru/PenilaianRaportGuru.tsx:522:                <button type="button" onClick={() => setIsModalOpen(false)} className="p-2 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+src/views/guru/PenilaianRaportGuru.tsx:657:                 <button type="button" onClick={() => setIsModalOpen(false)} className="px-5 py-3 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl transition-colors">Batal</button>
+src/views/guru/PenilaianRaportGuru.tsx:658:                 <button type="button" onClick={handleSave} className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-colors shadow-lg shadow-blue-500/20">Simpan {activeTab === 'pr_tugas' ? 'Tugas' : activeTab}</button>
+src/views/guru/PenilaianRaportGuru.tsx:681:                 <button onClick={() => setIsViewModalOpen(false)} className="mt-6 px-4 py-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 rounded-xl w-full font-bold transition-colors">Tutup</button>
+src/views/PengaturanBar.tsx:35:        <button 
+src/views/PengaturanBar.tsx:46:        <button 
+src/views/PengaturanBar.tsx:83:                          <button
+src/views/PengaturanBar.tsx:112:                          <button
+src/views/siswa/PRTugasSiswa.tsx:243:               <button onClick={() => finishCBT(false)} className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-colors shadow-lg shadow-blue-500/20">
+src/views/siswa/PRTugasSiswa.tsx:267:                              <button 
+src/views/siswa/PRTugasSiswa.tsx:287:                    <button 
+src/views/siswa/PRTugasSiswa.tsx:295:                    <button 
+src/views/siswa/PRTugasSiswa.tsx:303:                    <button 
+src/views/siswa/PRTugasSiswa.tsx:325:                            <button
+src/views/siswa/PRTugasSiswa.tsx:363:              <button onClick={() => setMode('list')} className="flex items-center gap-2 text-slate-500 hover:text-slate-800 dark:hover:text-white mb-6 transition-colors">
+src/views/siswa/PRTugasSiswa.tsx:380:                       <button onClick={() => setMode('list')} className="px-6 py-3 bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-white font-medium rounded-xl hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+src/views/siswa/PRTugasSiswa.tsx:395:                       <button onClick={startCBT} className="w-full flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all shadow-lg shadow-blue-500/30">
+src/views/siswa/PRTugasSiswa.tsx:418:                <button onClick={() => setMode('list')} className="w-full px-6 py-4 bg-slate-900 hover:bg-slate-800 text-white dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 font-bold rounded-xl transition-colors relative z-10">
+src/views/siswa/PRTugasSiswa.tsx:437:           <button onClick={() => setMode('list')} className="flex items-center gap-2 text-slate-500 hover:text-slate-800 dark:hover:text-white mb-6 transition-colors">
+src/views/siswa/PRTugasSiswa.tsx:515:                                   <button onClick={() => setUploadFile(null)} className="px-5 py-3 font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-colors">Batal</button>
+src/views/siswa/PRTugasSiswa.tsx:516:                                   <button onClick={submitOffline} className="px-6 py-3 font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-lg shadow-blue-500/20 transition-all active:scale-95 flex items-center gap-2">
+src/views/siswa/PRTugasSiswa.tsx:546:         <button 
+src/views/siswa/PRTugasSiswa.tsx:553:         <button 
+src/views/siswa/PRTugasSiswa.tsx:592:                    <button 
+src/views/siswa/KeuanganSiswa.tsx:149:         <button 
+src/views/siswa/KeuanganSiswa.tsx:156:         <button 
+src/views/siswa/KeuanganSiswa.tsx:163:         <button 
+src/views/siswa/PenilaianRaportSiswa.tsx:179:           <button 
+src/views/siswa/PenilaianRaportSiswa.tsx:282:                           <button onClick={() => {
+src/views/siswa/PenilaianRaportSiswa.tsx:292:                           <button onClick={() => handleDownload('pdf')} className="flex justify-center items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white px-4 py-3 rounded-xl font-medium transition-colors shadow-sm">
+src/views/siswa/PenilaianRaportSiswa.tsx:295:                           <button onClick={() => handleDownload('word')} className="flex justify-center items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-xl font-medium transition-colors shadow-sm">
+src/views/admin/PengaturanKeuangan.tsx:154:           <button 
+src/views/admin/PengaturanKeuangan.tsx:160:           <button 
+src/views/admin/PengaturanKeuangan.tsx:185:                           <button onClick={() => handleSelectAll(pegawai.username)} className="px-3 py-1.5 text-xs font-bold bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-400 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-500/20">Beri Semua Akses</button>
+src/views/admin/PengaturanKeuangan.tsx:186:                           <button onClick={() => handleDeselectAll(pegawai.username)} className="px-3 py-1.5 text-xs font-bold bg-rose-50 text-rose-600 dark:bg-rose-500/10 dark:text-rose-400 rounded-lg hover:bg-rose-100 dark:hover:bg-rose-500/20">Hapus Semua Akses</button>
+src/views/admin/PengaturanKeuangan.tsx:213:               <button onClick={handleAddPembayaran} className="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-sm transition-colors">
+src/views/admin/PengaturanKeuangan.tsx:238:                         <button onClick={() => handleEditPembayaran(item)} className="p-1.5 text-amber-600 bg-amber-50 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/PengaturanKeuangan.tsx:239:                         <button onClick={() => deletePembayaran(item.id)} className="p-1.5 text-rose-600 bg-rose-50 hover:bg-rose-100 rounded-lg dark:bg-rose-500/10 dark:hover:bg-rose-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/PengaturanKeuangan.tsx:270:             <button onClick={savePembayaran} className="w-full py-3 mt-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold transition-colors">Simpan</button>
+src/views/admin/PengaturanTampilan.tsx:72:                <button
+src/views/admin/PengaturanTampilan.tsx:109:                <button
+src/views/admin/PengaturanTampilan.tsx:132:                <button
+src/views/admin/PengaturanTahunAjaran.tsx:155:                   <button
+src/views/admin/PengaturanTahunAjaran.tsx:178:                    <button 
+src/views/admin/PengaturanTahunAjaran.tsx:214:                      <button 
+src/views/admin/PengaturanTahunAjaran.tsx:223:                    <button 
+src/views/admin/PengaturanTahunAjaran.tsx:231:                    <button 
+src/views/admin/PengaturanTahunAjaran.tsx:248:                <button 
+src/views/admin/LogAktivitas.tsx:50:          <button 
+src/views/admin/LaporanPengeluaran.tsx:142:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-rose-600 hover:bg-rose-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/LaporanPengeluaran.tsx:158:              <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><X className="w-4 h-4" /></button>
+src/views/admin/LaporanPengeluaran.tsx:225:              <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><X className="w-4 h-4" /></button>
+src/views/admin/LaporanPengeluaran.tsx:262:                   <button 
+src/views/admin/LaporanPengeluaran.tsx:277:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanPengeluaran.tsx:280:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanPengeluaran.tsx:316:                         <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/LaporanPengeluaran.tsx:317:                         <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/LaporanPengeluaran.tsx:320:                               <button onClick={() => handleDelete(item.id)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/LaporanPengeluaran.tsx:321:                               <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/LaporanPengeluaran.tsx:324:                            <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/DataKantinSekolah.tsx:139:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/DataKantinSekolah.tsx:155:            <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataKantinSekolah.tsx:227:            <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataKantinSekolah.tsx:268:                   <button 
+src/views/admin/DataKantinSekolah.tsx:283:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataKantinSekolah.tsx:286:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataKantinSekolah.tsx:326:                         <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/DataKantinSekolah.tsx:327:                         <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/DataKantinSekolah.tsx:330:                               <button onClick={() => handleDelete(item.id)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/DataKantinSekolah.tsx:331:                               <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/DataKantinSekolah.tsx:334:                            <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/DataPengumumanSekolah.tsx:117:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-sky-600 hover:bg-sky-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/DataPengumumanSekolah.tsx:133:            <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataPengumumanSekolah.tsx:196:            <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataPengumumanSekolah.tsx:237:                   <button 
+src/views/admin/DataPengumumanSekolah.tsx:252:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataPengumumanSekolah.tsx:255:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataPengumumanSekolah.tsx:286:                         <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/DataPengumumanSekolah.tsx:287:                         <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/DataPengumumanSekolah.tsx:290:                               <button onClick={() => handleDelete(item.id)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/DataPengumumanSekolah.tsx:291:                               <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/DataPengumumanSekolah.tsx:294:                            <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/LaporanTopUpKoin.tsx:145:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/LaporanTopUpKoin.tsx:161:              <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><X className="w-4 h-4" /></button>
+src/views/admin/LaporanTopUpKoin.tsx:225:              <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><X className="w-4 h-4" /></button>
+src/views/admin/LaporanTopUpKoin.tsx:262:                   <button 
+src/views/admin/LaporanTopUpKoin.tsx:277:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanTopUpKoin.tsx:280:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanTopUpKoin.tsx:318:                         <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/LaporanTopUpKoin.tsx:319:                         <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/LaporanTopUpKoin.tsx:322:                               <button onClick={() => handleDelete(item.id)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/LaporanTopUpKoin.tsx:323:                               <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/LaporanTopUpKoin.tsx:326:                            <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/DataSarpras.tsx:120:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/DataSarpras.tsx:136:            <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataSarpras.tsx:202:            <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataSarpras.tsx:243:                   <button 
+src/views/admin/DataSarpras.tsx:258:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataSarpras.tsx:261:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataSarpras.tsx:296:                         <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/DataSarpras.tsx:297:                         <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/DataSarpras.tsx:300:                               <button onClick={() => handleDelete(item.id)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/DataSarpras.tsx:301:                               <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/DataSarpras.tsx:304:                            <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/DataTokoSekolah.tsx:141:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/DataTokoSekolah.tsx:157:            <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataTokoSekolah.tsx:235:            <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataTokoSekolah.tsx:276:                   <button 
+src/views/admin/DataTokoSekolah.tsx:291:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataTokoSekolah.tsx:294:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataTokoSekolah.tsx:341:                     <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/DataTokoSekolah.tsx:342:                     <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/DataTokoSekolah.tsx:345:                           <button onClick={() => handleDelete(item.id)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/DataTokoSekolah.tsx:346:                           <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/DataTokoSekolah.tsx:349:                        <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/LaporanKehadiran.tsx:142:                   <button 
+src/views/admin/LaporanKehadiran.tsx:157:             <button onClick={exportCSV} className="flex-1 lg:flex-none flex items-center justify-center space-x-2 px-4 py-2.5 bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700/50 hover:border-emerald-500 dark:hover:border-emerald-500 text-emerald-600 dark:text-emerald-400 rounded-xl transition-all shadow-sm active:scale-95 font-medium text-sm">
+src/views/admin/LaporanKehadiran.tsx:161:             <button onClick={exportPDF} className="flex-1 lg:flex-none flex items-center justify-center space-x-2 px-4 py-2.5 bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700/50 hover:border-rose-500 dark:hover:border-rose-500 text-rose-600 dark:text-rose-400 rounded-xl transition-all shadow-sm active:scale-95 font-medium text-sm">
+src/views/admin/LaporanKehadiran.tsx:218:                      <button onClick={() => handleEdit(item)} className="p-2 text-blue-600 bg-blue-50 hover:bg-blue-100 dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50 rounded-lg transition-colors" title="Edit">
+src/views/admin/LaporanKehadiran.tsx:221:                      <button onClick={() => handleDelete(item.id)} className="p-2 text-rose-600 bg-rose-50 hover:bg-rose-100 dark:bg-rose-900/30 dark:text-rose-400 dark:hover:bg-rose-900/50 rounded-lg transition-colors" title="Hapus">
+src/views/admin/LaporanKehadiran.tsx:243:              <button onClick={() => setEditingItem(null)} className="text-slate-400 hover:text-slate-500 transition-colors">
+src/views/admin/LaporanKehadiran.tsx:263:              <button
+src/views/admin/LaporanKehadiran.tsx:269:              <button
+src/views/admin/LaporanKehadiran.tsx:283:               <button onClick={() => setSelectedPhoto(null)} className="absolute -top-12 right-0 p-2 text-white/70 hover:text-white bg-black/50 rounded-full"><X className="w-6 h-6" /></button>
+src/views/admin/PengaturanBankSoal.tsx:212:        <button 
+src/views/admin/PengaturanBankSoal.tsx:225:        <button 
+src/views/admin/PengaturanBankSoal.tsx:265:          <button 
+src/views/admin/PengaturanBankSoal.tsx:296:            <button 
+src/views/admin/PengaturanWaktuAbsensi.tsx:215:          <button
+src/views/admin/DataPolingSurveiSekolah.tsx:153:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/DataPolingSurveiSekolah.tsx:169:            <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataPolingSurveiSekolah.tsx:250:            <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataPolingSurveiSekolah.tsx:291:                   <button 
+src/views/admin/DataPolingSurveiSekolah.tsx:306:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataPolingSurveiSekolah.tsx:309:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataPolingSurveiSekolah.tsx:345:                     <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/DataPolingSurveiSekolah.tsx:346:                     <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/DataPolingSurveiSekolah.tsx:349:                           <button onClick={() => handleDelete(item.id, item.type)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/DataPolingSurveiSekolah.tsx:350:                           <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/DataPolingSurveiSekolah.tsx:353:                        <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/PengaturanKoneksiAPI.tsx:146:           <button
+src/views/admin/PengaturanKoneksiAPI.tsx:156:           <button
+src/views/admin/PengaturanKoneksiAPI.tsx:250:                <button
+src/views/admin/PengaturanKoneksiAPI.tsx:256:                <button
+src/views/admin/PengaturanKoneksiAPI.tsx:313:               <button
+src/views/admin/LaporanPemasukan.tsx:143:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/LaporanPemasukan.tsx:159:              <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><X className="w-4 h-4" /></button>
+src/views/admin/LaporanPemasukan.tsx:225:              <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><X className="w-4 h-4" /></button>
+src/views/admin/LaporanPemasukan.tsx:262:                   <button 
+src/views/admin/LaporanPemasukan.tsx:277:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanPemasukan.tsx:280:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanPemasukan.tsx:316:                         <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/LaporanPemasukan.tsx:317:                         <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/LaporanPemasukan.tsx:320:                               <button onClick={() => handleDelete(item.id)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/LaporanPemasukan.tsx:321:                               <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/LaporanPemasukan.tsx:324:                            <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/LaporanKeuangan.tsx:251:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-violet-600 hover:bg-violet-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/LaporanKeuangan.tsx:267:              <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><X className="w-4 h-4" /></button>
+src/views/admin/LaporanKeuangan.tsx:336:              <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><X className="w-4 h-4" /></button>
+src/views/admin/LaporanKeuangan.tsx:389:             <button
+src/views/admin/LaporanKeuangan.tsx:416:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanKeuangan.tsx:419:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanKeuangan.tsx:465:                         <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/LaporanKeuangan.tsx:466:                         <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/LaporanKeuangan.tsx:469:                               <button onClick={() => handleDelete(item)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/LaporanKeuangan.tsx:470:                               <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/LaporanKeuangan.tsx:473:                            <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/PengaturanSubAdmin.tsx:129:            <button 
+src/views/admin/PengaturanSubAdmin.tsx:145:                <button 
+src/views/admin/PengaturanSubAdmin.tsx:242:               <button 
+src/views/admin/PengaturanSubAdmin.tsx:278:                         <button 
+src/views/admin/PengaturanSubAdmin.tsx:302:                       <button
+src/views/admin/LaporanPembayaran.tsx:171:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/LaporanPembayaran.tsx:187:            <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/LaporanPembayaran.tsx:276:            <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/LaporanPembayaran.tsx:317:                   <button 
+src/views/admin/LaporanPembayaran.tsx:332:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanPembayaran.tsx:335:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/LaporanPembayaran.tsx:383:                         <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/LaporanPembayaran.tsx:384:                         <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/LaporanPembayaran.tsx:387:                               <button onClick={() => handleDelete(item.id)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/LaporanPembayaran.tsx:388:                               <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/LaporanPembayaran.tsx:391:                            <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/DataArsipSurat.tsx:120:        <button onClick={handleSaveEdit} className="w-full mt-2 py-3 bg-slate-700 hover:bg-slate-800 text-white rounded-xl font-bold">Simpan Perubahan</button>
+src/views/admin/DataArsipSurat.tsx:136:            <button onClick={() => setIsEditModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataArsipSurat.tsx:202:            <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/admin/DataArsipSurat.tsx:243:                   <button 
+src/views/admin/DataArsipSurat.tsx:258:             <button onClick={handleDownloadExcel} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataArsipSurat.tsx:261:             <button onClick={handleDownloadPDF} className="flex px-4 py-2 flex-1 justify-center items-center gap-2 bg-rose-50 hover:bg-rose-100 dark:bg-rose-500/10 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl font-bold transition-all text-sm">
+src/views/admin/DataArsipSurat.tsx:296:                         <button onClick={() => openView(item)} className="p-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg dark:bg-blue-500/10 dark:text-blue-400 dark:hover:bg-blue-500/20"><Eye className="w-4 h-4" /></button>
+src/views/admin/DataArsipSurat.tsx:297:                         <button onClick={() => openEdit(item)} className="p-1.5 bg-amber-50 text-amber-600 hover:bg-amber-100 rounded-lg dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20"><Edit className="w-4 h-4" /></button>
+src/views/admin/DataArsipSurat.tsx:300:                               <button onClick={() => handleDelete(item.id)} className="px-2 py-1 bg-red-600 text-white rounded text-xs font-bold">Ya</button>
+src/views/admin/DataArsipSurat.tsx:301:                               <button onClick={() => setShowDeleteConfirm(null)} className="px-2 py-1 bg-slate-200 text-slate-700 rounded text-xs font-bold">Batal</button>
+src/views/admin/DataArsipSurat.tsx:304:                            <button onClick={() => setShowDeleteConfirm(item.id)} className="p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg dark:bg-red-500/10 dark:text-red-400 dark:hover:bg-red-500/20"><Trash2 className="w-4 h-4" /></button>
+src/views/admin/PengaturanDatabase.tsx:133:        <button onClick={refreshStats} className="px-4 py-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-xl font-medium transition-colors flex items-center justify-center gap-2">
+src/views/admin/PengaturanDatabase.tsx:154:               <button onClick={handleBackupAll} className="flex-1 sm:flex-none flex items-center gap-2 px-4 py-3 bg-white/20 hover:bg-white/30 text-white font-medium rounded-lg transition-colors whitespace-nowrap whitespace-nowrap shadow-sm">
+src/views/admin/PengaturanDatabase.tsx:198:                       <button onClick={() => handleBackupSingle(db.key, db.label)} className="p-2 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400 rounded-lg text-slate-400 transition-colors tooltip-trigger relative group" title={`Download ${db.label}`}>
+src/views/admin/PengaturanDatabase.tsx:202:                       <button onClick={() => handleResetSingle(db.key, db.label)} className="p-2 hover:bg-rose-50 hover:text-rose-600 dark:hover:bg-rose-900/30 dark:hover:text-rose-400 rounded-lg text-slate-400 transition-colors" title={`Kosongkan ${db.label}`}>
+src/views/admin/PengaturanAplikasi.tsx:74:                                <button onClick={handleResetIcon} className="p-2 bg-rose-500 rounded-full text-white hover:bg-rose-600 transition-colors">
+src/views/admin/PengaturanAplikasi.tsx:85:                       <button onClick={() => fileInputRef.current?.click()} className="px-4 py-2 bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-400 font-semibold text-sm rounded-xl hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-colors flex items-center gap-2">
+src/views/admin/PengaturanAplikasi.tsx:89:                          <button onClick={handleResetIcon} className="px-4 py-2 bg-rose-50 text-rose-700 dark:bg-rose-500/10 dark:text-rose-400 font-semibold text-sm rounded-xl hover:bg-rose-100 dark:hover:bg-rose-500/20 transition-colors">
+src/views/admin/PengaturanAplikasi.tsx:160:               <button 
+src/views/admin/PengaturanDokumenTemplate.tsx:150:                        <button 
+src/views/admin/PengaturanDokumenTemplate.tsx:236:           <button
+src/views/admin/PengaturanDokumenTemplate.tsx:246:           <button
+src/views/admin/PengaturanDokumenTemplate.tsx:256:           <button
+src/views/admin/PengaturanDokumenTemplate.tsx:284:          <button
+src/views/shared/TokoSekolah.tsx:232:                <button 
+src/views/shared/TokoSekolah.tsx:263:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/shared/TokoSekolah.tsx:324:                 <button 
+src/views/shared/TokoSekolah.tsx:330:                 <button 
+src/views/shared/TokoSekolah.tsx:368:              <button 
+src/views/shared/TokoSekolah.tsx:374:               <button 
+src/views/shared/TokoSekolah.tsx:398:                   <button 
+src/views/shared/TokoSekolah.tsx:408:                   <button 
+src/views/shared/TokoSekolah.tsx:423:                        <button
+src/views/shared/TokoSekolah.tsx:442:                   <button
+src/views/shared/TokoSekolah.tsx:453:                   <button
+src/views/shared/TokoSekolah.tsx:472:                <button 
+src/views/shared/TokoSekolah.tsx:503:               <button onClick={() => setIsBuyModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/shared/TokoSekolah.tsx:549:                 <button 
+src/views/shared/TokoSekolah.tsx:597:                             <button 
+src/views/shared/PengumumanSekolah.tsx:115:                  <button 
+src/views/shared/PengumumanSekolah.tsx:122:                <button 
+src/views/shared/PengumumanSekolah.tsx:146:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/shared/PengumumanSekolah.tsx:189:                 <button 
+src/views/shared/AbsensiAction.tsx:343:               <button onClick={() => setSelectedPhoto(null)} className="absolute -top-12 right-0 p-2 text-white/70 hover:text-white bg-black/50 rounded-full"><X className="w-6 h-6" /></button>
+src/views/shared/AbsensiAction.tsx:355:            <button onClick={closeCamera} className="p-2 bg-slate-800/50 rounded-full hover:bg-slate-700 active:scale-95 transition-all">
+src/views/shared/AbsensiAction.tsx:399:                <button 
+src/views/shared/AbsensiAction.tsx:409:                <button 
+src/views/shared/AbsensiAction.tsx:418:                <button 
+src/views/shared/KantinSekolah.tsx:235:                <button 
+src/views/shared/KantinSekolah.tsx:266:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/shared/KantinSekolah.tsx:325:                 <button 
+src/views/shared/KantinSekolah.tsx:331:                 <button 
+src/views/shared/KantinSekolah.tsx:367:              <button 
+src/views/shared/KantinSekolah.tsx:373:               <button 
+src/views/shared/KantinSekolah.tsx:397:                   <button 
+src/views/shared/KantinSekolah.tsx:407:                   <button 
+src/views/shared/KantinSekolah.tsx:421:                     <button
+src/views/shared/KantinSekolah.tsx:434:                     <button
+src/views/shared/KantinSekolah.tsx:454:                <button 
+src/views/shared/KantinSekolah.tsx:485:               <button onClick={() => setIsBuyModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/shared/KantinSekolah.tsx:531:                 <button 
+src/views/shared/KantinSekolah.tsx:579:                             <button 
+src/views/shared/PolingSurveiSekolah.tsx:156:                         <button
+src/views/shared/PolingSurveiSekolah.tsx:210:             <button onClick={() => setIsPolingModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/shared/PolingSurveiSekolah.tsx:281:             <button onClick={() => setIsSurveiModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/shared/PolingSurveiSekolah.tsx:311:           <button 
+src/views/shared/PolingSurveiSekolah.tsx:317:           <button 
+src/views/tendik/InputSarpras.tsx:342:        <button 
+src/views/tendik/InputSarpras.tsx:393:         <button onClick={handleDownloadJPG} className="w-full flex items-center justify-center gap-2 bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 hover:bg-indigo-100 py-3 rounded-xl font-bold transition-colors">
+src/views/tendik/InputSarpras.tsx:397:       <button onClick={() => { setIsModalOpen(false); setSaveSuccessData(null); }} className="mt-4 text-slate-500 border border-slate-200 dark:border-slate-700 px-6 py-2 rounded-xl font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+src/views/tendik/InputSarpras.tsx:419:              <button 
+src/views/tendik/InputSarpras.tsx:425:               <button 
+src/views/tendik/InputSarpras.tsx:451:            <button onClick={() => setIsModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputSarpras.tsx:522:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputSarpras.tsx:540:          <button 
+src/views/tendik/InputSarpras.tsx:559:              <button 
+src/views/tendik/InputSarpras.tsx:565:              <button 
+src/views/tendik/InputSarpras.tsx:625:                     <button onClick={() => openView(p)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-bold text-xs ring-1 ring-indigo-100 dark:ring-indigo-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputSarpras.tsx:628:                     <button onClick={() => openEdit(p)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold text-xs ring-1 ring-amber-100 dark:ring-amber-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputSarpras.tsx:631:                     <button onClick={() => handleDelete(p.id)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-xs ring-1 ring-red-100 dark:ring-red-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputSarpras.tsx:641:                   <button onClick={() => openView(p)} className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all">
+src/views/tendik/InputSarpras.tsx:644:                   <button onClick={() => openEdit(p)} className="p-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all">
+src/views/tendik/InputSarpras.tsx:647:                   <button onClick={() => handleDelete(p.id)} className="p-2 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 transition-all">
+src/views/tendik/InputTokoSekolah.tsx:336:                <button 
+src/views/tendik/InputTokoSekolah.tsx:387:              <button 
+src/views/tendik/InputTokoSekolah.tsx:393:               <button 
+src/views/tendik/InputTokoSekolah.tsx:405:                <button 
+src/views/tendik/InputTokoSekolah.tsx:429:            <button onClick={() => setIsModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputTokoSekolah.tsx:513:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputTokoSekolah.tsx:542:          <button 
+src/views/tendik/InputTokoSekolah.tsx:560:              <button 
+src/views/tendik/InputTokoSekolah.tsx:566:              <button 
+src/views/tendik/InputTokoSekolah.tsx:622:                     <button onClick={() => openView(item)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-bold text-xs ring-1 ring-indigo-100 dark:ring-indigo-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputTokoSekolah.tsx:625:                     <button onClick={() => openEdit(item)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold text-xs ring-1 ring-amber-100 dark:ring-amber-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputTokoSekolah.tsx:628:                     <button onClick={() => handleDelete(item.id)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-xs ring-1 ring-red-100 dark:ring-red-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputTokoSekolah.tsx:638:                   <button onClick={() => openView(item)} className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all shadow-sm">
+src/views/tendik/InputTokoSekolah.tsx:641:                   <button onClick={() => openEdit(item)} className="p-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all shadow-sm">
+src/views/tendik/InputTokoSekolah.tsx:644:                   <button onClick={() => handleDelete(item.id)} className="p-2 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 transition-all shadow-sm">
+src/views/tendik/InputTopUpKoin.tsx:417:              <button onClick={() => setShowConfirm(false)} className="px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 rounded-lg text-sm font-bold active:scale-95 transition-all">Koreksi</button>
+src/views/tendik/InputTopUpKoin.tsx:418:              <button onClick={handleSimpan} className="px-5 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg text-sm font-bold shadow-md shadow-emerald-500/20 active:scale-95 transition-all">Simpan</button>
+src/views/tendik/InputTopUpKoin.tsx:425:           <button 
+src/views/tendik/InputTopUpKoin.tsx:487:         <button onClick={handleDownloadTopUpJPG} className="flex-1 flex items-center justify-center gap-2 bg-amber-50 text-amber-600 dark:bg-amber-500/10 hover:bg-amber-100 py-3 rounded-xl font-bold transition-colors">
+src/views/tendik/InputTopUpKoin.tsx:490:         <button onClick={handleDownloadTopUpPDF} className="flex-1 flex items-center justify-center gap-2 bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 hover:bg-indigo-100 py-3 rounded-xl font-bold transition-colors">
+src/views/tendik/InputTopUpKoin.tsx:494:       <button onClick={() => { setIsModalOpen(false); setSaveSuccessData(null); }} className="mt-4 text-slate-500 border border-slate-200 dark:border-slate-700 px-6 py-2 rounded-xl font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+src/views/tendik/InputTopUpKoin.tsx:519:            <button onClick={() => { setIsModalOpen(false); setShowConfirm(false); }} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputTopUpKoin.tsx:583:            <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputTopUpKoin.tsx:612:          <button 
+src/views/tendik/InputTopUpKoin.tsx:630:              <button 
+src/views/tendik/InputTopUpKoin.tsx:636:              <button 
+src/views/tendik/InputTopUpKoin.tsx:689:                     <button onClick={() => openView(t)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-bold text-xs ring-1 ring-indigo-100 dark:ring-indigo-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputTopUpKoin.tsx:692:                     <button onClick={() => openEdit(t)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold text-xs ring-1 ring-amber-100 dark:ring-amber-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputTopUpKoin.tsx:695:                     <button onClick={() => handleDelete(t.id)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-xs ring-1 ring-red-100 dark:ring-red-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputTopUpKoin.tsx:705:                   <button onClick={() => openView(t)} className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all">
+src/views/tendik/InputTopUpKoin.tsx:708:                   <button onClick={() => openEdit(t)} className="p-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all">
+src/views/tendik/InputTopUpKoin.tsx:711:                   <button onClick={() => handleDelete(t.id)} className="p-2 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 transition-all">
+src/views/tendik/InputPengeluaran.tsx:351:        <button 
+src/views/tendik/InputPengeluaran.tsx:397:         <button onClick={handleDownloadPengeluaranJPG} className="w-full flex items-center justify-center gap-2 bg-rose-50 text-rose-600 dark:bg-rose-500/10 hover:bg-rose-100 py-3 rounded-xl font-bold transition-colors">
+src/views/tendik/InputPengeluaran.tsx:401:       <button onClick={() => { setIsModalOpen(false); setSaveSuccessData(null); }} className="mt-4 text-slate-500 border border-slate-200 dark:border-slate-700 px-6 py-2 rounded-xl font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+src/views/tendik/InputPengeluaran.tsx:423:              <button 
+src/views/tendik/InputPengeluaran.tsx:429:               <button 
+src/views/tendik/InputPengeluaran.tsx:453:            <button onClick={() => setIsModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputPengeluaran.tsx:522:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputPengeluaran.tsx:551:          <button 
+src/views/tendik/InputPengeluaran.tsx:569:              <button 
+src/views/tendik/InputPengeluaran.tsx:575:              <button 
+src/views/tendik/InputPengeluaran.tsx:636:                     <button onClick={() => openView(p)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-bold text-xs ring-1 ring-indigo-100 dark:ring-indigo-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPengeluaran.tsx:639:                     <button onClick={() => openEdit(p)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold text-xs ring-1 ring-amber-100 dark:ring-amber-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPengeluaran.tsx:642:                     <button onClick={() => handleDelete(p.id)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-xs ring-1 ring-red-100 dark:ring-red-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPengeluaran.tsx:652:                   <button onClick={() => openView(p)} className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all">
+src/views/tendik/InputPengeluaran.tsx:655:                   <button onClick={() => openEdit(p)} className="p-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all">
+src/views/tendik/InputPengeluaran.tsx:658:                   <button onClick={() => handleDelete(p.id)} className="p-2 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 transition-all">
+src/views/tendik/InputPembayaran.tsx:349:            <button type="button" onClick={() => setSelectedSiswa(null)} className="text-xs font-semibold text-rose-500 bg-rose-50 dark:bg-rose-500/10 px-3 py-1.5 rounded-lg border border-rose-200 dark:border-rose-500/20 active:scale-95 transition-transform">Ganti</button>
+src/views/tendik/InputPembayaran.tsx:497:           <button 
+src/views/tendik/InputPembayaran.tsx:514:               <button type="button" onClick={() => setShowConfirm(false)} className="flex-1 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-bold py-3 rounded-xl active:scale-95 transition-transform">Koreksi Data</button>
+src/views/tendik/InputPembayaran.tsx:515:               <button type="button" onClick={handleSimpan} className="flex-1 bg-indigo-600 text-white font-bold py-3 rounded-xl active:scale-95 transition-transform shadow-lg shadow-indigo-600/30">Simpan Final</button>
+src/views/tendik/InputPembayaran.tsx:581:         <button onClick={handleDownloadJPG} className="flex-1 flex items-center justify-center gap-2 bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 hover:bg-indigo-100 py-3 rounded-xl font-bold transition-colors">
+src/views/tendik/InputPembayaran.tsx:584:         <button onClick={handleDownloadPDF} className="flex-1 flex items-center justify-center gap-2 bg-rose-50 text-rose-600 dark:bg-rose-500/10 hover:bg-rose-100 py-3 rounded-xl font-bold transition-colors">
+src/views/tendik/InputPembayaran.tsx:588:       <button onClick={() => { setIsModalOpen(false); setSaveSuccessData(null); }} className="mt-4 text-slate-500 border border-slate-200 dark:border-slate-700 px-6 py-2 rounded-xl font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+src/views/tendik/InputPembayaran.tsx:614:            <button onClick={() => { setIsModalOpen(false); setShowConfirm(false); }} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputPembayaran.tsx:643:          <button 
+src/views/tendik/InputPembayaran.tsx:661:              <button 
+src/views/tendik/InputPembayaran.tsx:667:              <button 
+src/views/tendik/InputArsipSurat.tsx:306:              <button 
+src/views/tendik/InputArsipSurat.tsx:312:               <button 
+src/views/tendik/InputArsipSurat.tsx:324:                <button 
+src/views/tendik/InputArsipSurat.tsx:348:            <button onClick={() => setIsModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputArsipSurat.tsx:435:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputArsipSurat.tsx:452:          <button 
+src/views/tendik/InputArsipSurat.tsx:470:              <button 
+src/views/tendik/InputArsipSurat.tsx:476:              <button 
+src/views/tendik/InputArsipSurat.tsx:526:                     <button onClick={() => openView(item)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-bold text-xs ring-1 ring-indigo-100 dark:ring-indigo-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputArsipSurat.tsx:529:                     <button onClick={() => openEdit(item)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold text-xs ring-1 ring-amber-100 dark:ring-amber-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputArsipSurat.tsx:532:                     <button onClick={() => handleDelete(item.id)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-xs ring-1 ring-red-100 dark:ring-red-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputArsipSurat.tsx:542:                   <button onClick={() => openView(item)} className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all shadow-sm">
+src/views/tendik/InputArsipSurat.tsx:545:                   <button onClick={() => openEdit(item)} className="p-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all shadow-sm">
+src/views/tendik/InputArsipSurat.tsx:548:                   <button onClick={() => handleDelete(item.id)} className="p-2 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 transition-all shadow-sm">
+src/views/tendik/DataPenjualanToko.tsx:82:                     <button onClick={() => setIsScannerOpen(false)} className="p-2 bg-slate-800/50 hover:bg-slate-700/50 rounded-full backdrop-blur-md">
+src/views/tendik/DataPenjualanToko.tsx:99:                       <button onClick={handleCapture} className="w-20 h-20 rounded-full bg-white/20 border-4 border-white flex items-center justify-center hover:bg-white/40 transition-colors backdrop-blur-sm active:scale-95">
+src/views/tendik/DataPenjualanToko.tsx:145:                 <button onClick={reScan} className="flex-1 py-3.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-xl font-bold border border-slate-300 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700">
+src/views/tendik/DataPenjualanToko.tsx:148:                 <button onClick={saveScanResult} className="flex-[2] py-3.5 bg-pink-600 text-white rounded-xl font-bold shadow-lg shadow-pink-600/30 hover:bg-pink-700">
+src/views/tendik/DataPenjualanToko.tsx:187:          <button 
+src/views/tendik/InputPolingSurvei.tsx:448:              <button 
+src/views/tendik/InputPolingSurvei.tsx:454:               <button 
+src/views/tendik/InputPolingSurvei.tsx:466:                <button 
+src/views/tendik/InputPolingSurvei.tsx:490:            <button onClick={() => setIsModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputPolingSurvei.tsx:578:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputPolingSurvei.tsx:595:             <button 
+src/views/tendik/InputPolingSurvei.tsx:602:             <button 
+src/views/tendik/InputPolingSurvei.tsx:612:          <button 
+src/views/tendik/InputPolingSurvei.tsx:630:              <button 
+src/views/tendik/InputPolingSurvei.tsx:636:              <button 
+src/views/tendik/InputPolingSurvei.tsx:692:                     <button onClick={() => openView(item)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-bold text-xs ring-1 ring-indigo-100 dark:ring-indigo-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPolingSurvei.tsx:695:                     <button onClick={() => openEdit(item, item.type)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold text-xs ring-1 ring-amber-100 dark:ring-amber-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPolingSurvei.tsx:698:                     <button onClick={() => handleDelete(item.id, item.type)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-xs ring-1 ring-red-100 dark:ring-red-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPolingSurvei.tsx:708:                   <button onClick={() => openView(item)} className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all">
+src/views/tendik/InputPolingSurvei.tsx:711:                   <button onClick={() => openEdit(item, item.type)} className="p-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all">
+src/views/tendik/InputPolingSurvei.tsx:714:                   <button onClick={() => handleDelete(item.id, item.type)} className="p-2 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 transition-all">
+src/views/tendik/InputPemasukan.tsx:351:        <button 
+src/views/tendik/InputPemasukan.tsx:397:         <button onClick={handleDownloadPemasukanJPG} className="w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-600 dark:bg-emerald-500/10 hover:bg-emerald-100 py-3 rounded-xl font-bold transition-colors">
+src/views/tendik/InputPemasukan.tsx:401:       <button onClick={() => { setIsModalOpen(false); setSaveSuccessData(null); }} className="mt-4 text-slate-500 border border-slate-200 dark:border-slate-700 px-6 py-2 rounded-xl font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+src/views/tendik/InputPemasukan.tsx:423:              <button 
+src/views/tendik/InputPemasukan.tsx:429:               <button 
+src/views/tendik/InputPemasukan.tsx:453:            <button onClick={() => setIsModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputPemasukan.tsx:522:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputPemasukan.tsx:551:          <button 
+src/views/tendik/InputPemasukan.tsx:569:              <button 
+src/views/tendik/InputPemasukan.tsx:575:              <button 
+src/views/tendik/InputPemasukan.tsx:636:                     <button onClick={() => openView(p)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-bold text-xs ring-1 ring-indigo-100 dark:ring-indigo-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPemasukan.tsx:639:                     <button onClick={() => openEdit(p)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold text-xs ring-1 ring-amber-100 dark:ring-amber-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPemasukan.tsx:642:                     <button onClick={() => handleDelete(p.id)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-xs ring-1 ring-red-100 dark:ring-red-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPemasukan.tsx:652:                   <button onClick={() => openView(p)} className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all">
+src/views/tendik/InputPemasukan.tsx:655:                   <button onClick={() => openEdit(p)} className="p-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all">
+src/views/tendik/InputPemasukan.tsx:658:                   <button onClick={() => handleDelete(p.id)} className="p-2 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 transition-all">
+src/views/tendik/InputPengumuman.tsx:335:        <button 
+src/views/tendik/InputPengumuman.tsx:386:         <button onClick={handleDownloadJPG} className="w-full flex items-center justify-center gap-2 bg-sky-50 text-sky-600 dark:bg-sky-500/10 hover:bg-sky-100 py-3 rounded-xl font-bold transition-colors">
+src/views/tendik/InputPengumuman.tsx:390:       <button onClick={() => { setIsModalOpen(false); setSaveSuccessData(null); }} className="mt-4 text-slate-500 border border-slate-200 dark:border-slate-700 px-6 py-2 rounded-xl font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+src/views/tendik/InputPengumuman.tsx:412:              <button 
+src/views/tendik/InputPengumuman.tsx:418:               <button 
+src/views/tendik/InputPengumuman.tsx:444:            <button onClick={() => setIsModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputPengumuman.tsx:521:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/tendik/InputPengumuman.tsx:539:          <button 
+src/views/tendik/InputPengumuman.tsx:558:              <button 
+src/views/tendik/InputPengumuman.tsx:564:              <button 
+src/views/tendik/InputPengumuman.tsx:627:                     <button onClick={() => openView(p)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-bold text-xs ring-1 ring-indigo-100 dark:ring-indigo-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPengumuman.tsx:630:                     <button onClick={() => openEdit(p)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold text-xs ring-1 ring-amber-100 dark:ring-amber-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPengumuman.tsx:633:                     <button onClick={() => handleDelete(p.id)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-xs ring-1 ring-red-100 dark:ring-red-500/20 active:scale-95 transition-all w-fit">
+src/views/tendik/InputPengumuman.tsx:643:                   <button onClick={() => openView(p)} className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all">
+src/views/tendik/InputPengumuman.tsx:646:                   <button onClick={() => openEdit(p)} className="p-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all">
+src/views/tendik/InputPengumuman.tsx:649:                   <button onClick={() => handleDelete(p.id)} className="p-2 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 transition-all">
+src/views/Login.tsx:123:              <button
+src/views/Login.tsx:132:          <button
+src/views/mitra/DataPenjualanKantin.tsx:70:        <button onClick={handleDownload} className="flex items-center gap-2 bg-[#2196F3] hover:bg-blue-600 text-white px-5 py-3 rounded-xl font-medium transition-colors shadow-lg shadow-blue-500/20 whitespace-nowrap">
+src/views/mitra/DataPenjualanKantin.tsx:130:                        <button onClick={() => setSelectedData(item)} className="p-2 border border-slate-200 bg-slate-50 text-slate-600 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700 rounded-lg outline-none mx-auto block">
+src/views/mitra/DataPenjualanKantin.tsx:151:                  <button onClick={() => setSelectedData(null)} className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors outline-none"><X className="w-5 h-5"/></button>
+src/views/mitra/DataPenjualanKantin.tsx:189:                   <button onClick={() => setSelectedData(null)} className="flex-1 px-4 py-3 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-medium transition-colors">Tutup</button>
+src/views/mitra/DataPenjualanKantin.tsx:190:                   <button onClick={() => { handleDownload(); setSelectedData(null); }} className="flex-1 px-4 py-3 bg-[#2196F3] hover:bg-blue-600 text-white rounded-xl font-medium transition-colors">Cetak Struk</button>
+src/views/mitra/InputProdukKantin.tsx:345:               <button 
+src/views/mitra/InputProdukKantin.tsx:398:              <button 
+src/views/mitra/InputProdukKantin.tsx:404:               <button 
+src/views/mitra/InputProdukKantin.tsx:416:                <button 
+src/views/mitra/InputProdukKantin.tsx:442:            <button onClick={() => setIsModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/mitra/InputProdukKantin.tsx:520:             <button onClick={() => setIsViewModalOpen(false)} className="p-2 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+src/views/mitra/InputProdukKantin.tsx:551:          <button 
+src/views/mitra/InputProdukKantin.tsx:570:              <button 
+src/views/mitra/InputProdukKantin.tsx:576:              <button 
+src/views/mitra/InputProdukKantin.tsx:644:                     <button onClick={() => openView(item)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-bold text-xs ring-1 ring-indigo-100 dark:ring-indigo-500/20 active:scale-95 transition-all w-fit">
+src/views/mitra/InputProdukKantin.tsx:647:                     <button onClick={() => openEdit(item)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold text-xs ring-1 ring-amber-100 dark:ring-amber-500/20 active:scale-95 transition-all w-fit">
+src/views/mitra/InputProdukKantin.tsx:650:                     <button onClick={() => handleDelete(item.id)} className="flex items-center justify-center h-9 px-3 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-xs ring-1 ring-red-100 dark:ring-red-500/20 active:scale-95 transition-all w-fit">
+src/views/mitra/InputProdukKantin.tsx:660:                   <button onClick={() => openView(item)} className="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all shadow-sm">
+src/views/mitra/InputProdukKantin.tsx:663:                   <button onClick={() => openEdit(item)} className="p-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all shadow-sm">
+src/views/mitra/InputProdukKantin.tsx:666:                   <button onClick={() => handleDelete(item.id)} className="p-2 rounded-lg bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 transition-all shadow-sm">
+src/views/mitra/DataKeuanganKantin.tsx:118:        <button onClick={handleDownload} className="flex items-center gap-2 bg-[#8B5CF6] hover:bg-purple-600 text-white px-5 py-3 rounded-xl font-medium transition-colors shadow-lg shadow-purple-500/20 whitespace-nowrap">
+src/views/mitra/PesananMasukKantin.tsx:115:                           <button onClick={() => updateStatus(item.id, 'Diproses')} title="Diproses" className="p-2 border border-blue-200 bg-blue-50 text-blue-600 hover:bg-blue-100 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50 rounded-lg">
+src/views/mitra/PesananMasukKantin.tsx:118:                           <button onClick={() => updateStatus(item.id, 'Siap Diambil')} title="Siap Diambil" className="p-2 border border-emerald-200 bg-emerald-50 text-emerald-600 hover:bg-emerald-100 dark:border-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-400 dark:hover:bg-emerald-900/50 rounded-lg">
+src/views/mitra/PesananMasukKantin.tsx:121:                           <button onClick={() => updateStatus(item.id, 'Selesai')} title="Selesai (Tandai Berhasil)" className="flex items-center gap-1 px-3 py-1.5 bg-[#F43F5E] hover:bg-rose-600 text-white font-medium text-sm rounded-lg shadow-sm">
+src/views/GenericPage.tsx:42:        <button 
+src/views/GenericPage.tsx:53:        <button 
+src/views/ortu/KehadiranAnak.tsx:152:          <button onClick={exportCSV} className="flex items-center space-x-2 px-3 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl transition-colors text-sm font-medium">
+src/views/ortu/KehadiranAnak.tsx:156:          <button onClick={exportPDF} className="flex items-center space-x-2 px-3 py-2 bg-rose-500 hover:bg-rose-600 text-white rounded-xl transition-colors text-sm font-medium">
+src/views/ortu/KehadiranAnak.tsx:257:               <button onClick={() => setSelectedPhoto(null)} className="absolute -top-12 right-0 p-2 text-white/70 hover:text-white bg-black/50 rounded-full"><X className="w-6 h-6" /></button>
+src/components/layout/Sidebar.tsx:44:          <button className="p-2 -mr-2 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 hover:bg-white/30 dark:hover:bg-slate-800/50 rounded-lg lg:hidden transition-colors" onClick={onClose}>
+src/components/layout/Sidebar.tsx:94:                  <button
+src/components/layout/Sidebar.tsx:162:          <button 
+src/components/layout/BottomNav.tsx:47:          <button 
+src/components/layout/MainLayout.tsx:60:              <button 
+src/components/layout/MainLayout.tsx:80:             <button
+src/components/ui/DashboardCard.tsx:39:    <button onClick={() => { triggerHaptic('light'); if (onClick) onClick(); }} className={`bg-white/80 dark:bg-slate-800/80 backdrop-blur-md transform-gpu border border-white/60 dark:border-white/20 rounded-[1.5rem] p-4 sm:p-5 text-left shadow-[0_4px_16px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:bg-white/95 dark:hover:bg-slate-800 transition-all duration-500 group outline-none active:scale-95 flex flex-col relative overflow-hidden ${className}`}>
+src/components/ui/LogoutModal.tsx:37:                <button
+src/components/ui/LogoutModal.tsx:43:                <button
+src/components/ui/MobileBottomSheet.tsx:50:                <button 
+src/components/ui/OfflineBanner.tsx:41:          <button 
+src/components/ui/ProfileCard.tsx:167:                <button 
+src/components/ui/ProfileCard.tsx:192:                    <button onClick={handleEditClick} className="mt-4 sm:mt-0 px-4 py-2 bg-indigo-50 border border-indigo-200 text-indigo-600 dark:bg-indigo-500/10 dark:border-indigo-500/30 dark:text-indigo-400 font-bold text-sm rounded-xl hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all">
+src/components/ui/ProfileCard.tsx:228:                        <button onClick={() => setIsEditing(false)} className="px-5 py-2.5 rounded-xl font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 transition-colors">Batal</button>
+src/components/ui/ProfileCard.tsx:229:                        <button onClick={handleSaveProfile} className="px-5 py-2.5 rounded-xl font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg transition-colors">Simpan Profil</button>
+src/components/ui/Calendar.tsx:157:        <button
+src/components/ui/Calendar.tsx:196:            <button onClick={prevMonth} className="p-1.5 rounded-lg bg-white/70 dark:bg-slate-800/80 hover:bg-white/90 dark:hover:bg-slate-700/80 shadow-sm border border-white/60 dark:border-white/30 transition-all text-slate-600 dark:text-slate-300">
+src/components/ui/Calendar.tsx:199:            <button onClick={nextMonth} className="p-1.5 rounded-lg bg-white/70 dark:bg-slate-800/80 hover:bg-white/90 dark:hover:bg-slate-700/80 shadow-sm border border-white/60 dark:border-white/30 transition-all text-slate-600 dark:text-slate-300">
+src/components/ui/Calendar.tsx:237:                 <button onClick={() => setIsEditingNote(true)} className="p-1 rounded bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 transition-colors">
+src/components/ui/Calendar.tsx:249:                      <button onClick={() => deleteNote(note.id)} className="absolute top-2 right-2 p-1 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded opacity-0 group-hover:opacity-100 transition-all">
+src/components/ui/Calendar.tsx:272:                   <button onClick={() => setIsEditingNote(false)} className="p-1.5 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+src/components/ui/Calendar.tsx:275:                   <button onClick={saveNote} className="p-1.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-lg shadow-sm transition-colors">
+src/components/admin/DatabaseTable.tsx:200:            <button onClick={() => navigate('Beranda')} className="p-2 -ml-2 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors active:scale-95 outline-none">
+src/components/admin/DatabaseTable.tsx:222:            <button onClick={() => handleOpenModal()} className="flex-1 sm:flex-none flex justify-center items-center space-x-1.5 bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-xl transition-colors text-sm font-medium active:scale-95">
+src/components/admin/DatabaseTable.tsx:226:              <button onClick={handleDownloadCSV} className="flex-1 sm:flex-none flex justify-center items-center space-x-1.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 px-3 py-2 rounded-xl transition-colors text-sm font-medium active:scale-95">
+src/components/admin/DatabaseTable.tsx:229:              <button className="flex-1 sm:flex-none flex justify-center items-center space-x-1.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 px-3 py-2 rounded-xl transition-colors text-sm font-medium active:scale-95 relative overflow-hidden">
+src/components/admin/DatabaseTable.tsx:271:                    <button onClick={() => setViewingItem(item)} className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors" title="Lihat"><Eye className="w-4 h-4" /></button>
+src/components/admin/DatabaseTable.tsx:272:                    <button onClick={() => handleOpenModal(item)} className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 hover:text-amber-600 dark:hover:text-amber-400 rounded-lg transition-colors" title="Edit"><Edit className="w-4 h-4" /></button>
+src/components/admin/DatabaseTable.tsx:273:                    <button onClick={() => handleDelete(item.id)} className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 hover:text-rose-600 dark:hover:text-rose-400 rounded-lg transition-colors" title="Hapus"><Trash2 className="w-4 h-4" /></button>
+src/components/admin/DatabaseTable.tsx:347:                <button type="submit" className="w-full px-5 py-4 mt-4 rounded-xl text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white transition-colors flex items-center justify-center">
+src/components/admin/DatabaseTable.tsx:358:                  <button type="button" onClick={handleCloseModal} className="p-2 -ml-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+src/components/admin/DatabaseTable.tsx:366:                  <button type="button" onClick={handleCloseModal} className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">Batal</button>
+src/components/admin/DatabaseTable.tsx:367:                  <button type="button" onClick={handleSubmit as any} className="px-5 py-2.5 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">Simpan</button>
+src/components/admin/DatabaseTable.tsx:459:                  <button onClick={() => setViewingItem(null)} className="p-2 -ml-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+src/components/hoc/withErrorBoundary.tsx:37:          <button 

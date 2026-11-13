@@ -1,0 +1,112 @@
+{
+  "entities": {
+    "Workspace": {
+      "title": "Workspace",
+      "description": "Root school synchronization workspace owned by an authenticated user.",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the workspace owner.",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "schoolName": {
+          "type": "string",
+          "description": "Display name of the school workspace.",
+          "minLength": 1,
+          "maxLength": 150
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the workspace was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the workspace was last updated."
+        }
+      },
+      "required": ["ownerId", "schoolName", "createdAt", "updatedAt"]
+    },
+    "AppStateEntry": {
+      "title": "AppStateEntry",
+      "description": "Realtime synchronized application state entry stored using native Firestore maps/lists.",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the owner.",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "workspaceId": {
+          "type": "string",
+          "description": "Parent workspace document ID.",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "storeKey": {
+          "type": "string",
+          "description": "Application storage key prefixed with sd_.",
+          "maxLength": 128,
+          "pattern": "^sd_[a-zA-Z0-9_\\-]+$"
+        },
+        "payload": {
+          "type": "object",
+          "description": "Native Firestore map wrapping the synchronized data under the 'data' key."
+        },
+        "updatedBy": {
+          "type": "string",
+          "description": "Firebase Auth UID of the user performing the update.",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the entry was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the entry was last updated."
+        }
+      },
+      "required": ["ownerId", "workspaceId", "storeKey", "payload", "updatedBy", "createdAt", "updatedAt"]
+    },
+    "AdminRole": {
+      "title": "AdminRole",
+      "description": "Privileged administrator record managed server-side.",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "maxLength": 254,
+          "description": "Verified email address of the administrator."
+        },
+        "assignedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when admin access was granted."
+        }
+      },
+      "required": ["email", "assignedAt"]
+    }
+  },
+  "firestore": {
+    "/workspaces/{workspaceId}": {
+      "schema": { "$ref": "#/entities/Workspace" },
+      "description": "Workspace root documents controlling access to synchronized school data."
+    },
+    "/workspaces/{workspaceId}/appState/{storeKey}": {
+      "schema": { "$ref": "#/entities/AppStateEntry" },
+      "description": "Realtime key-value documents synchronized across devices for the workspace."
+    },
+    "/admins/{adminId}": {
+      "schema": { "$ref": "#/entities/AdminRole" },
+      "description": "Read-only admin registry used for RBAC verification."
+    }
+  }
+}

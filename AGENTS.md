@@ -1,0 +1,9 @@
+# Project Rules & Guidelines
+
+- **Responsive Design Strictness:** The application MUST always adapt to all device types. It must have distinct layouts and behaviors for Desktop and Mobile contexts (e.g., responsive navigation, adapting grid structures).
+- **Design Preservation Strictness:** Do NOT change, reduce, or remove ANY of the current visual design, CSS styling, glassmorphism effects, or layouts when adding new menus, features, or fixing issues. The existing appearance must be completely preserved.
+- **Strict Instruction Adherence:** Execute EXACTLY what is commanded. Do NOT add new unrequested features, and do NOT remove existing functionalities or design elements. Stay completely within the boundaries of the explicit instructions provided.
+- **Consistent Layouts & Performance:** Pastikan setiap halaman menu yang akan dibuat memiliki layout yang sama dan presisi pada setiap role. Setiap melakukan penambahan menu atau fitur, pastikan audit otomatis ("run linter" & "compile") agar aplikasi ini bebas dari error dan masalah. Pastikan juga aplikasi selalu berjalan mulus dan ringan (animasi/transisi tidak memberatkan kinerja).
+- **Indonesian Language & Currency Localization:** Pastikan aplikasi ini seluruh elemennya menggunakan bahasa Indonesia sesuai Kamus Besar Bahasa Indonesia. Pastikan tidak ada ikon dollar atau mata uang asing dalam pembuatan aplikasi ini; hanya wajib menggunakan Rupiah (Rp) dan ikon mata uang Rupiah.
+- **Asymmetric Dashboard Layout:** Jangan merubah layout kotak menu di dashboard. Pastikan susunan grid selalu menggunakan gaya bento layout asimetris seperti yang ada saat ini, karena ini merupakan ciri khas aplikasi.
+- **Strict Visual Design Freeze:** Jangan merubah, menambahkan, atau mengurangi semua tampilan dan desain yang sudah kita buat sampai saat ini (termasuk layout kotak menu, UI/UX, warna, dan komponen seperti app bar/dashboard) tanpa perintah spesifik. Saat ini kita masuk ke tahap pembuatan konten menu.

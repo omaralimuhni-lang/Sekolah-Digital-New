@@ -1,0 +1,174 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Global Safety Net (Default Deny)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Reusable Hardened Helpers ---
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerifiedUser() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function isBootstrappedAdmin() {
+      return isVerifiedUser() && request.auth.token.email == 'omaralimuhni@gmail.com';
+    }
+
+    function isAdmin() {
+      return isVerifiedUser() && (
+        request.auth.token.email == 'omaralimuhni@gmail.com' ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function isOwner(ownerId) {
+      return isSignedIn() && request.auth.uid == ownerId;
+    }
+
+    // --- Validation Blueprints ---
+    function isValidWorkspace(data, expectedOwnerId) {
+      return data.keys().hasAll(['ownerId', 'schoolName', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly(['ownerId', 'schoolName', 'createdAt', 'updatedAt'])
+        && data.ownerId is string
+        && isValidId(data.ownerId)
+        && data.ownerId == expectedOwnerId
+        && data.schoolName is string
+        && data.schoolName.size() >= 1
+        && data.schoolName.size() <= 150
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    function isValidAppStateEntry(data, workspaceId, storeKey, expectedOwnerId) {
+      return data.keys().hasAll(['ownerId', 'workspaceId', 'storeKey', 'payload', 'updatedBy', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly(['ownerId', 'workspaceId', 'storeKey', 'payload', 'updatedBy', 'createdAt', 'updatedAt'])
+        && data.ownerId is string
+        && isValidId(data.ownerId)
+        && data.ownerId == expectedOwnerId
+        && data.workspaceId is string
+        && isValidId(data.workspaceId)
+        && data.workspaceId == workspaceId
+        && data.storeKey is string
+        && isValidId(data.storeKey)
+        && data.storeKey == storeKey
+        && data.storeKey.matches('^sd_[a-zA-Z0-9_\\-]+$')
+        && data.payload is map
+        && data.payload.keys().hasAll(['data'])
+        && data.payload.keys().hasOnly(['data'])
+        && data.updatedBy is string
+        && isValidId(data.updatedBy)
+        && data.updatedBy == request.auth.uid
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    // --- Admin Registry (Read-only self check, server-managed writes) ---
+    match /admins/{adminId} {
+      allow get: if isVerifiedUser() && isValidId(adminId) && request.auth.uid == adminId;
+      allow list: if false;
+      allow create, update, delete: if false;
+    }
+
+    // --- Workspaces Collection ---
+    match /workspaces/{workspaceId} {
+      allow get: if isSignedIn() && isValidId(workspaceId) && (existing().ownerId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && (resource.data.ownerId == request.auth.uid || isBootstrappedAdmin());
+
+      allow create: if isVerifiedUser()
+        && isValidId(workspaceId)
+        && workspaceId == request.auth.uid
+        && isValidWorkspace(incoming(), request.auth.uid)
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+
+      allow update: if isVerifiedUser()
+        && isValidId(workspaceId)
+        && isValidWorkspace(incoming(), existing().ownerId)
+        && incoming().ownerId == existing().ownerId
+        && incoming().createdAt == existing().createdAt
+        && incoming().updatedAt == request.time
+        && (
+          isAdmin() ||
+          (isOwner(existing().ownerId) && incoming().diff(existing()).affectedKeys().hasOnly(['schoolName', 'updatedAt']))
+        );
+
+      allow delete: if isVerifiedUser() && isValidId(workspaceId) && (isOwner(existing().ownerId) || isAdmin());
+
+      // --- Realtime App State Subcollection ---
+      match /appState/{storeKey} {
+        allow get: if isSignedIn()
+          && isValidId(workspaceId)
+          && isValidId(storeKey)
+          && (
+            isAdmin() ||
+            (
+              existing().ownerId == request.auth.uid &&
+              get(/databases/$(database)/documents/workspaces/$(workspaceId)).data.ownerId == request.auth.uid
+            )
+          );
+
+        allow list: if isSignedIn() && (resource.data.ownerId == request.auth.uid || isBootstrappedAdmin());
+
+        allow create: if isVerifiedUser()
+          && isValidId(workspaceId)
+          && isValidId(storeKey)
+          && isValidAppStateEntry(incoming(), workspaceId, storeKey, request.auth.uid)
+          && incoming().createdAt == request.time
+          && incoming().updatedAt == request.time
+          && exists(/databases/$(database)/documents/workspaces/$(workspaceId))
+          && (
+            get(/databases/$(database)/documents/workspaces/$(workspaceId)).data.ownerId == request.auth.uid ||
+            isAdmin()
+          );
+
+        allow update: if isVerifiedUser()
+          && isValidId(workspaceId)
+          && isValidId(storeKey)
+          && isValidAppStateEntry(incoming(), workspaceId, storeKey, existing().ownerId)
+          && incoming().ownerId == existing().ownerId
+          && incoming().workspaceId == existing().workspaceId
+          && incoming().storeKey == existing().storeKey
+          && incoming().createdAt == existing().createdAt
+          && incoming().updatedAt == request.time
+          && exists(/databases/$(database)/documents/workspaces/$(workspaceId))
+          && (
+            isAdmin() ||
+            (
+              isOwner(existing().ownerId) &&
+              get(/databases/$(database)/documents/workspaces/$(workspaceId)).data.ownerId == request.auth.uid &&
+              incoming().diff(existing()).affectedKeys().hasOnly(['payload', 'updatedBy', 'updatedAt'])
+            )
+          );
+
+        allow delete: if isVerifiedUser()
+          && isValidId(workspaceId)
+          && isValidId(storeKey)
+          && exists(/databases/$(database)/documents/workspaces/$(workspaceId))
+          && (
+            isAdmin() ||
+            (
+              isOwner(existing().ownerId) &&
+              get(/databases/$(database)/documents/workspaces/$(workspaceId)).data.ownerId == request.auth.uid
+            )
+          );
+      }
+    }
+  }
+}
